@@ -38,6 +38,12 @@ Rayfield:Notify({
 })
 local Tab = Window:CreateTab("公告", 4483362458)
 local Paragraph = Tab:CreateParagraph({Title = "脚本公告", Content = "此脚本使用开源UI想要使用UI网站 sirius.menu 此脚本不收费你要是被收费了那就是被圈 其他卡密是给捐赠者使用"})
+local Button = Tab:CreateButton({
+   Name = "关闭脚本",
+   Callback = function()
+   Rayfield:Destroy()
+   end,
+})
 local Tab = Window:CreateTab("检测", 4483362458)
 local Button = Tab:CreateButton({
    Name = "按钮测试",
@@ -54,12 +60,12 @@ local Tab = Window:CreateTab("脚本", 4483362458)
 local Button = Tab:CreateButton({  
    Name = "皮脚本",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
    Rayfield:Notify({
    Title = "正在注入",
    Content = "请稍等",
    Duration = 6.5,
    Image = 4483362458,
 })
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/xiaopi77/xiaopi77/main/QQ1002100032-Roblox-Pi-script.lua"))()
    end,
 })
