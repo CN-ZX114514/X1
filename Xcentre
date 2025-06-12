@@ -23,11 +23,11 @@ local Window = Rayfield:CreateWindow({
    KeySettings = {
       Title = "卡密验证",
       Subtitle = "欢迎参与我们的卡密验证 没有卡密输114514",
-      Note = "没有卡密的输114514", 
+      Note = "没有卡密的输114514或者欢迎", 
       FileName = "密钥", 
       SaveKey = false, 
       GrabKeyFromSite = false, 
-      Key = {"114514"} 
+      Key = {"114514","欢迎"} 
    }
 })
 Rayfield:Notify({
@@ -38,6 +38,7 @@ Rayfield:Notify({
 })
 local Tab = Window:CreateTab("公告", 4483362458)
 local Paragraph = Tab:CreateParagraph({Title = "脚本公告", Content = "此脚本使用开源UI想要使用UI网站 sirius.menu 此脚本不收费你要是被收费了那就是被圈 其他卡密是给捐赠者使用"})
+local Paragraph = Tab:CreateParagraph({Title = "升级版", Content = "此公告栏是想用升级版的人看的升级版需要捐赠10R币注意一人一个代码"})
 local Button = Tab:CreateButton({
    Name = "关闭脚本",
    Callback = function()
